@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaphir21</title>
+    <link rel="icon" href="code.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id='header'>
+        <a href="https://github.com/zaphir21">
+            <img id="logo">
+            <img id="logoDeco">
+            <h1 id="pseudo">Zaphir21</h1>
+        </a>
+        <button type="button" onclick="page()" class="learn">Learn</button>
+    </div>
+    <div class="container">
+        <section class="code">
+        <p id="text">Code in  <span id="writer" class=""></span></p> 
+        </section>
+        <section id="learn">
+            <p id="text">Learning <span id="writerLearns" class=""></span></p>
+        </section>
+    </div>
+    
+    <a href="https://github.com/zaphir21"><img src="github.svg" alt="github logo" id="github"></a>
+    
+    <script>
+        const code = document.querySelector('.code');
+        const learn = document.querySelector('#learn');
+        const button = document.querySelector('.learn');
+        learn.style.display = 'none';
+        const page = () => {
+            if(learn.style.display === "none"){
+                learn.style.display = "block";
+                code.style.display = "none";
+                button.textContent = "Code";
+
+            }else{
+                learn.style.display = "none",
+                code.style.display = "block"
+                button.textContent = "Learn";
+
+            }
+        }
+        
+
+    </script>
+    <script src="writer.js"></script>
+    
+</body>
+</html>

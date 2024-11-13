@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #272323;
+    margin: 0;
+    padding: 0;
+    color: #e2dfdf;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: #e2dfdf;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+button.learn{
+    background-color: transparent;
+    border: none;
+    color: #e2dfdf;
+    font-size: 25px;
+}
+button.learn:hover{
+    text-decoration: underline;
+}
+#header a{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+#logoDeco{
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px;
+    position: absolute;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+p#text {
+    font-size: 4vw;
+    margin: 0;
+}
+
+#writer, #writerLearns{
+    font-weight: bold;
+}
+
+#github {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Styles supplémentaires pour petites tailles d'écran */
+@media (max-width: 600px) {
+    p#text {
+        font-size: 6vw;
+    }
+}
+
+/* Styles supplémentaires pour grandes tailles d'écran */
+@media (min-width: 1400px) {
+    p#text {
+        font-size: 66px;
+    }
+}
+
