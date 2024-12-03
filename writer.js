@@ -20,7 +20,7 @@ typewriter
     typewriterLearn
         .pauseFor(500)
         .typeString('<span id="react">React</span>').pauseFor(1500).deleteAll()
-        .typeString('<span id="java">Java</span>').pauseFor(1500).typeString(' and <span id="kotlin">Kotlin</span>').pauseFor(1000).deleteChars(11).pauseFor(500).deleteAll()
+        .typeString('<span id="java">Java</span>').pauseFor(1500).deleteAll()
         .typeString('<span id="php">PHP</span>').pauseFor(1500).deleteAll()
         .start();
     
